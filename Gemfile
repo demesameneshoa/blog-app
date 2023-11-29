@@ -1,3 +1,4 @@
+# Purpose: Gemfile for Rails 7.1.2
 source 'https://rubygems.org'
 
 ruby '3.2.2'
