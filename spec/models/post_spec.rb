@@ -9,7 +9,7 @@ RSpec.describe Post, type: :model do
   describe '#five_most_recent_comments' do
     it 'returns five most recent comments for the post' do
       post = create(:post)
-      create_list(:comment, 7, post: post)
+      create_list(:comment, 7, post:)
 
       expect(post.five_most_recent_comments.length).to eq(5)
     end

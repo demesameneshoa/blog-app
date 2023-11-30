@@ -9,9 +9,9 @@ RSpec.describe Like, type: :model do
   describe '#update_post_likes_counter' do
     it 'updates the post likes counter' do
       post = create(:post)
-      create_list(:like, 3, post: post)
+      create_list(:like, 3, post:)
 
-      like = create(:like, post: post)
+      like = create(:like, post:)
       like.send(:update_post_likes_counter) # Access private method for testing
 
       expect(post.reload.likes_counter).to eq(4)

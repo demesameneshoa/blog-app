@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_30_071032) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_30_071816) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -34,7 +34,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_30_071032) do
   end
 
   create_table "posts", force: :cascade do |t|
-    t.bigint "author_id"
+    t.bigint "author_id", null: false
     t.string "title"
     t.text "text"
     t.integer "comments_counter"
