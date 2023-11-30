@@ -33,6 +33,9 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 ## Key Features <a name="key-features"></a>
 - [x] **Rails Setup**
 - [x] **Data Model Setup**
+- [x] **Models Created**
+- [x] **Class Association Implemented**
+- [x] **Custom Methods Implemented to Fetch and Manipulate Data**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
