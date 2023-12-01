@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :posts, foreign_key: 'author_id'
-  has_many :comments
+  has_many :comments, foreign_key: 'author_id'
   has_many :likes
   validates :name, presence: true
   validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
@@ -11,6 +11,8 @@ class User < ApplicationRecord
   end
 
   def update_user_posts_counter
-    update(posts_counter: posts.count)
+    return if posts_counter == posts.count
+
+    update_columns(posts_counter: posts.count)
   end
 end
