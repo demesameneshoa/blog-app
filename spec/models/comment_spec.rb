@@ -13,9 +13,9 @@ RSpec.describe Comment, type: :model do
     it 'updates the post\'s comments_counter' do
       # post = Post.create!(author: create(:user), title: 'Sample Title', text: 'This is a sample post content.')
 
-      create(:comment, post: post, author: user)
+      create(:comment, post:, author: user)
 
-      expect { create(:comment, post: post, author: user) }.to change { post.reload.comments_counter }.by(1)
+      expect { create(:comment, post:, author: user) }.to change { post.reload.comments_counter }.by(1)
     end
   end
 end
