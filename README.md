@@ -11,6 +11,7 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Setup ](#setup-)
     - [Prerequisites ](#prerequisites-)
+    - [Tests ](#tests-)
   - [Usage ](#usage-)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
@@ -36,6 +37,8 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Models Created**
 - [x] **Class Association Implemented**
 - [x] **Custom Methods Implemented to Fetch and Manipulate Data**
+- [x] **Models Data Validation Implemented**
+- [x] **Models Unit Testing Applied**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -83,12 +86,17 @@ Follow these steps to use the program:
 
 5. You can now interact with the app, create posts, add comments, and explore its features.
 
+## Usage <a name="tests"></a>
 
+1. Run your Ruby on Rails Tests
+
+   bash
+   `rspec spec/models/`
 ## 👥 Authors <a name="authors"></a>
 
 This project was developed by:
 
-👤 **Claudia Rojas**
+👤 **Demes Ameneshoa**
 -   GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
 -   LinkedIn: [@demesameneshoa](https://www.linkedin.com/in/demesameneshoa/)
 
