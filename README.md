@@ -39,6 +39,9 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Custom Methods Implemented to Fetch and Manipulate Data**
 - [x] **Models Data Validation Implemented**
 - [x] **Models Unit Testing Applied**
+- [x] **Controllers Implemented**
+- [x] **Routes applied for multiple controllers**
+- [x] **View frameworks and templates created**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
