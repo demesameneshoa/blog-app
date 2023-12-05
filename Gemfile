@@ -50,6 +50,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   # Add RSpec and FactoryBot
   gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 5.0'
   gem 'shoulda-matchers', '~> 4.0'
 end
