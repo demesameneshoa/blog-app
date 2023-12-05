@@ -42,6 +42,8 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Controllers Implemented**
 - [x] **Routes applied for multiple controllers**
 - [x] **View frameworks and templates created**
+- [x] **Controller tests for users implemented**
+- [x] **Controller tests for posts implemented**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
