@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    # Placeholder for show post logic
+    @post = Post.find(params[:id])
+    @user = @post.author
   end
 end
