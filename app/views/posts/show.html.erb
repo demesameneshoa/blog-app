@@ -8,6 +8,10 @@
       </div>
       <br>
     <p><%= @post.text %></p>
+    <%= form_for [@user, @post, Like.new], url: user_post_likes_path(@user, @post), method: :post do |f| %>
+      <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+      <%= f.submit "Like", class: "like-button" %>
+    <% end %>
   </div>
   <div class="user-card left">
     <ul>

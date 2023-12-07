@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get '/users/:user_id/posts/new', to: 'posts#new' 
   # Get /users/user_id/posts/id
   get '/users/:user_id/posts/:id', to: 'posts#show' 
+  # like post
+  post '/users/:user_id/posts/:post_id/likes', to: 'likes#create', as: 'user_post_likes'
   resources :users do
     resources :posts, only: [:index, :show, :new, :create]
   end
