@@ -46,6 +46,9 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Controller tests for posts implemented**
 - [x] **Dynamic views for users implemented**
 - [x] **Dynamic views for posts implemented**
+- [x] **Form Created to add posts**
+- [x] **Form Created to add comments to posts**
+- [x] **Liking posts implemented using a button**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
