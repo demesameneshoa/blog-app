@@ -1,0 +1,14 @@
+<h1>Create a Post</h1>
+<%= form_for [@user, @post], url: user_posts_path(@user), method: :post do |f| %>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+  
+    <div>
+      <%= f.label :text %>
+      <%= f.text_area :text %>
+    </div>
+    <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+      <%= f.submit "Create Post" %>
+<% end %>
