@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.user-container,
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-card,
+.post-card {
+  background-color: #fff;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.image-grid,
+.image-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-grid img,
+.image-container img {
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.user-details,
+.post-details {
+  text-align: center;
+}
+
+.bio {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #3091c8;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #216a94;
+}
