@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   post '/users/:user_id/posts/:post_id/comments', to: 'comments#create', as: 'user_post_comments'
   resources :users do
     resources :posts, only: [:index, :show, :new, :create] do
-      resources :comments, only: [:index, :create, :destroy]
+      resources :comments, only: [:index, :new, :create, :destroy]
       resources :likes, only: [:create, :destroy]
     end
   end
