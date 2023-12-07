@@ -14,24 +14,24 @@
  *= require_self
  */
 
- body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
- .user-card {
-    display: flex;
-  }
-  
-  .image-grid {
-    margin-right: 20px; /* Adjust the margin as needed */
-  }
+.user-card {
+  display: flex;
+}
 
-  .user-header {
-    display: flex;
-  }
+.image-grid {
+ margin-right: 20px; /* Adjust the margin as needed */
+}
 
-  .image-container {
-    margin-right: 20px; /* Adjust the margin as needed */
-  }
+.user-header {
+ display: flex;
+}
+
+.image-container {
+ margin-right: 20px; /* Adjust the margin as needed */
+}
