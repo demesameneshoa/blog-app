@@ -35,10 +35,10 @@ h1 {
 .user-card,
 .post-card {
   background-color: #fff;
-  width: 250px;
+  width: 450px;
   margin: 10px;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 10px;  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -112,4 +112,27 @@ textarea {
   border: none;
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.comment-button {
+  background-color: #007bff; /* Blue color, you can adjust */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.single-post {
+  background-color: #fff;
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+}
+
+.comments-container {
+  text-align: left; 
 }
