@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- body {
+body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
@@ -72,7 +72,7 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-Button {
+button {
   display: block;
   width: 100%;
   margin-top: 10px;
@@ -84,6 +84,6 @@ Button {
   cursor: pointer;
 }
 
-Button:hover {
+button:hover {
   background-color: #216a94;
 }
