@@ -1,9 +1,15 @@
+# posts_controller.rb
+require 'kaminari'
+
 class PostsController < ApplicationController
   def index
-    # placeholder for posts index logic
+    @user = User.find(params[:user_id])
+
+    # Catch all the posts associates to this user and paginate them
+    @posts = Post.where(author: @user).page(params[:page]).per(3)
   end
 
   def show
-    # placeholder for show post logic
+    # Placeholder for show post logic
   end
 end
