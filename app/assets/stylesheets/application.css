@@ -27,3 +27,11 @@
   .image-grid {
     margin-right: 20px; /* Adjust the margin as needed */
   }
+
+  .user-header {
+    display: flex;
+  }
+
+  .image-container {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
