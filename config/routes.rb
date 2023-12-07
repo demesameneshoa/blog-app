@@ -13,6 +13,18 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show' 
   # Get /users/id/posts
   get '/users/:user_id/posts', to: 'posts#index' 
+    # Get /users/id/posts/new
+  get '/users/:user_id/posts/new', to: 'posts#new' 
   # Get /users/user_id/posts/id
   get '/users/:user_id/posts/:id', to: 'posts#show' 
+  # like post
+  post '/users/:user_id/posts/:post_id/likes', to: 'likes#create', as: 'user_post_likes'
+  #add comment to post
+  post '/users/:user_id/posts/:post_id/comments', to: 'comments#create', as: 'user_post_comments'
+  resources :users do
+    resources :posts, only: [:index, :show, :new, :create] do
+      resources :comments, only: [:index, :new, :create, :destroy]
+      resources :likes, only: [:create, :destroy]
+    end
+  end
 end

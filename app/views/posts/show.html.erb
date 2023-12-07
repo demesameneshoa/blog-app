@@ -1,6 +1,6 @@
 <h1>Single Post Page</h1>
 <div>
-  <div class="user-card left">
+  <div class="single-post">
     <h3><%= @post.title %> by <%= @user.name %></h3>
     <div class="right">
         <span class="span-post">Comments: <%= @post.comments.count %></span>
@@ -8,8 +8,22 @@
       </div>
       <br>
     <p><%= @post.text %></p>
+    
+    <%= form_for [@user, @post, Comment.new], url: user_post_comments_path(@user, @post), method: :post do |f| %>
+      <div>
+        <%= f.label :text %>
+        <%= f.text_area :text %>
+      </div>
+      <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+      <%= f.submit "Add Comment", class: "comment-button" %>
+    <% end %>
+    
+    <%= form_for [@user, @post, Like.new], url: user_post_likes_path(@user, @post), method: :post do |f| %>
+      <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+      <%= f.submit "Like", class: "like-button" %>
+    <% end %>
   </div>
-  <div class="user-card left">
+  <div class="single-post comments-container">
     <ul>
       <h5>All the Comments:</h5>
       <br>
