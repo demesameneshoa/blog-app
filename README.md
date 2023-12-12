@@ -49,6 +49,7 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Form Created to add posts**
 - [x] **Form Created to add comments to posts**
 - [x] **Liking posts implemented using a button**
+- [x] **Integration Specs On Views Implemented**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -109,6 +110,10 @@ This project was developed by:
 👤 **Demes Ameneshoa**
 -   GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
 -   LinkedIn: [@demesameneshoa](https://www.linkedin.com/in/demesameneshoa/)
+
+👤 **Arthur Emanuel G. Iturres**
+-   GitHub: [@ITurres](https://github.com/ITurres)
+-   LinkedIn: [@ITurres](https://www.linkedin.com/in/arturoemanuelguerraiturres/)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
