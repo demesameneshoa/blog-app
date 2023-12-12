@@ -1,3 +1,4 @@
+# Users Show Page specs
 require 'rails_helper'
 
 RSpec.describe 'User show page', type: :system do
@@ -12,7 +13,7 @@ RSpec.describe 'User show page', type: :system do
   end
   it 'I can see the user\'s profile picture' do
     # Ensure that the user's profile picture is visible on the page
-    expect(page).to have_selector('img') 
+    expect(page).to have_selector('img')
   end
 
   it 'I can see the user\'s username' do
