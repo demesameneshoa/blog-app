@@ -14,6 +14,7 @@
     - [Tests ](#tests-)
   - [Usage ](#usage-)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features](#future-features)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show Your Support ](#️-show-your-support-)
   - [📜 License ](#-license-)
@@ -114,6 +115,17 @@ This project was developed by:
 👤 **Arthur Emanuel G. Iturres**
 -   GitHub: [@ITurres](https://github.com/ITurres)
 -   LinkedIn: [@ITurres](https://www.linkedin.com/in/arturoemanuelguerraiturres/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] Add Devise.
+- [ ] Add authorization rules.
+- [ ] Add API endpoints.
+- [ ] API documentation.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
