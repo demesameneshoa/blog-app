@@ -35,7 +35,7 @@ RSpec.describe Post, type: :system do
 
     it 'displays comments on a post' do
       new_post = create(:post, author: user)
-      comment = create(:comment, post: new_post)
+      create(:comment, post: new_post)
 
       user.comments.each do |post_comment|
         expect(page).to have_content(post_comment.text)
