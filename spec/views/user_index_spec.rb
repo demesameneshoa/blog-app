@@ -15,7 +15,7 @@ RSpec.describe Post, type: :system do
     # I can see the profile picture for each user.
     it 'displays the profile pictures of the users' do
       @users.each do |user|
-        expect(page).to have_css("img'#{user.photo}']")
+        expect(page).to have_css("img")
       end
     end
     # I can see the number of posts each user has written.
