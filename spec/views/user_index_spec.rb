@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :system do
-  describe 'show user page' do
+  describe 'user index page' do
     before do
       create(:user, name: 'User1', posts_counter: 3)
       create(:user, name: 'User2', posts_counter: 5)
