@@ -33,21 +33,14 @@ RSpec.describe Post, type: :system do
       end
     end
 
-    # ! REVIEW THIS ONE!----------------------
-    # it 'displays comments on a post' do
-    #   p '--------------displays comments on a post----------------'
-    #   new_post = create(:post, author: user)
-    #   p new_post
-    #   comment = create(:comment, post: new_post)
-    #   p comment
-    #   p new_post
-    #   p '---------------------------------------'
+    it 'displays comments on a post' do
+      new_post = create(:post, author: user)
+      comment = create(:comment, post: new_post)
 
-    #   sleep(15)
-
-    #   expect(page).to have_content('All the Comments:')
-    # end
-    # ! --------------------------------------
+      user.comments.each do |post_comment|
+        expect(page).to have_content(post_comment.text)
+      end
+    end
 
     it 'displays the comment counter for each post' do
       user.posts.each do |post|
