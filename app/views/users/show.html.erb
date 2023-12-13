@@ -23,7 +23,7 @@
   <div class="user-posts">
     <% @user.three_most_recent_posts.each do |post| %>
       <div class="post">
-        <h3><%= post.title %></h3>
+        <h3><%= link_to post.title, user_post_path(@user, post) %></h3>
         <p><%= post.text %></p>
         <p>Comments: <%= post.comments_counter %></p>
         <p>Likes: <%= post.likes_counter %></p>
@@ -32,6 +32,8 @@
   </div>
 
   <!-- Button to see all posts -->
- <Button>see all posts</Button>
+  <%= link_to user_posts_path(@user) do %>
+    <button> See all posts </button>
+  <% end %>
 </div>
 <% end %>

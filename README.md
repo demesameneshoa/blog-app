@@ -14,6 +14,7 @@
     - [Tests ](#tests-)
   - [Usage ](#usage-)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features](#future-features)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show Your Support ](#️-show-your-support-)
   - [📜 License ](#-license-)
@@ -49,6 +50,7 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Form Created to add posts**
 - [x] **Form Created to add comments to posts**
 - [x] **Liking posts implemented using a button**
+- [x] **Integration Specs On Views Implemented**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -109,6 +111,21 @@ This project was developed by:
 👤 **Demes Ameneshoa**
 -   GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
 -   LinkedIn: [@demesameneshoa](https://www.linkedin.com/in/demesameneshoa/)
+
+👤 **Arthur Emanuel G. Iturres**
+-   GitHub: [@ITurres](https://github.com/ITurres)
+-   LinkedIn: [@ITurres](https://www.linkedin.com/in/arturoemanuelguerraiturres/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] Add Devise.
+- [ ] Add authorization rules.
+- [ ] Add API endpoints.
+- [ ] API documentation.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
