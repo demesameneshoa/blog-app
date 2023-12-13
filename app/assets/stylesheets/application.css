@@ -136,3 +136,37 @@ textarea {
 .comments-container {
   text-align: left;
 }
+
+.form-signin {
+  width: 100%;
+  max-width: 360px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  cursor: text;
+  color: #495057;
+  padding: .375rem .75rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
