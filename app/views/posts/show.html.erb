@@ -22,6 +22,11 @@
       <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
       <%= f.submit "Like", class: "like-button" %>
     <% end %>
+
+    <% if can? :destroy, @post || @post.id == current_user %>
+      <%= button_to "Delete", user_post_path(@user, @post),
+                    method: :delete, class: "btn btn-danger" %>
+    <% end %>
   </div>
   <div class="single-post comments-container">
     <ul>
