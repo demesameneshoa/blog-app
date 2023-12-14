@@ -26,13 +26,13 @@ class CommentsController < ApplicationController
     if @comment.destroy
       flash[:success] = 'Comment successfully deleted!'
       @post.update_user_posts_counter
-      redirect_to user_post_path(@user, @post) 
+      redirect_to user_post_path(@user, @post)
     else
       flash[:error] = 'Comment could not be deleted, please try again...'
       render :show, locals: { user: @user, post: @post }
     end
   end
-  
+
   private
 
   def comment_params
