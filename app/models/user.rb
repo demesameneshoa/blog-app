@@ -14,6 +14,10 @@ class User < ApplicationRecord
     posts.order(created_at: :desc).limit(3)
   end
 
+  def admin?
+    role == 'admin'
+  end
+
   def update_user_posts_counter
     return if posts_counter == posts.count
 
