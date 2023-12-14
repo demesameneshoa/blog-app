@@ -174,7 +174,7 @@ textarea {
 .comment-container {
   display: flex;
   align-items: baseline;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .btn-delete {
