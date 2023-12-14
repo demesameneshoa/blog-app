@@ -1,9 +1,9 @@
-    <h1>All Posts Page</h1>
+<h1>All Posts Page</h1>
 <div>
     <div class="user-header">
     <!-- Display user photo, name, and number of posts -->
     <div class="image-container">
-    <%= image_tag @user.photo, width: '100', height: '100', alt: "#{@user.name}'s photo" %>
+      <img src="<%= @user.photo %>" alt="<%= @user.name %>'s photo" width="100rem" height="100rem">
     </div>
     <div class="user-info">
     <h2><%= @user.name %></h2>
@@ -11,7 +11,6 @@
     </div>
     </div>
 </div>
-
 <div>
   <ul>
     <% @posts.each do |post| %>
@@ -38,4 +37,4 @@
     <% end %>
   </ul>
 </div>
-<%= paginate @posts, param_name: 'page', class: 'button' %>
+<%= paginate @posts, param_name: "page", class: "button" %>

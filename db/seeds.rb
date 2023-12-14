@@ -10,30 +10,3 @@
 # db/seeds.rb
 # seeds.rb
 # ? Create 10 random users.
-10.times do
-    photo_number = rand(1..5) # ? the below url can only handle 5 different photos.
-    photo_url = "https://robohash.org/accusantiumeaquea.png?size=200x200&set=set#{photo_number}"
-    user = User.create(
-      name: Faker::Name.name,
-      photo: photo_url,
-      bio: Faker::Lorem.sentence
-    )
-  
-    # ? Create 5 random posts for each user.
-    5.times do
-      new_post = Post.create(
-        author: user,
-        title: Faker::Lorem.sentence,
-        text: Faker::Lorem.paragraph
-      )
-  
-      # ? Create 3 random comments for each post.
-      6.times do
-        Comment.create(
-          post: new_post,
-          author: User.all.sample,
-          text: Faker::Lorem.sentence
-        )
-      end
-    end
-  end
