@@ -22,7 +22,7 @@
     # ? Create 5 random posts for each user.
     5.times do
       new_post = Post.create(
-        author: user,
+        author_id: user.id,
         title: Faker::Lorem.sentence,
         text: Faker::Lorem.paragraph
       )
