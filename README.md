@@ -52,6 +52,7 @@ The construction of this project relies on Ruby on Rails, an open-source and dyn
 - [x] **Liking posts implemented using a button**
 - [x] **Integration Specs On Views Implemented**
 - [x] **Devise users sign_up and sign_in Implemented**
+- [x] **Users authorization is applied using cancancan gem**
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -121,7 +122,6 @@ This project was developed by:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add authorization rules.
 - [ ] Add API endpoints.
 - [ ] API documentation.
 

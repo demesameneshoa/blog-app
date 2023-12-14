@@ -20,13 +20,27 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = @current_user.posts.new(post_params)
+    @post = current_user.posts.new(post_params)
     @user = User.find(params[:user_id])
 
     if @post.save
       redirect_to user_post_url(@user, @post), notice: 'Post was successfully created.'
     else
       render :new
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @user = current_user
+
+    if @post.destroy
+      flash[:success] = 'Post successfully deleted!'
+      @post.update_user_posts_counter
+      redirect_to root_path # ! we could also redirect to the user's posts_path.
+    else
+      flash[:error] = 'Post could not be deleted, please try again...'
+      render :show, locals: { user: @user, post: @post }
     end
   end
 
