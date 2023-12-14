@@ -74,8 +74,8 @@ h1 {
 
 button {
   display: block;
-  width: 100%;
   margin-top: 10px;
+  width: 100%;
   background-color: #3091c8;
   color: #fff;
   border: none;
@@ -169,4 +169,14 @@ textarea {
 
 .text-center {
   text-align: center !important;
+}
+
+.comment-container {
+  display: flex;
+  align-items: baseline;
+  justify-content:space-between;
+}
+
+.btn-delete {
+  width: max-content;
 }
