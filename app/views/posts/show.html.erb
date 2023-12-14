@@ -9,7 +9,7 @@
       <br>
     <p><%= @post.text %></p>
     
-    <%= form_for [@user, @post, Comment.new], url: user_post_comments_path(@user, @post), method: :post do |f| %>
+    <%= form_for [current_user, @post, Comment.new], url: user_post_comments_path(current_user, @post), method: :post do |f| %>
       <div>
         <%= f.label :text %>
         <%= f.text_area :text %>
@@ -23,8 +23,8 @@
       <%= f.submit "Like", class: "like-button" %>
     <% end %>
 
-    <% if can? :destroy, @post || @post.id == current_user %>
-      <%= button_to "Delete", user_post_path(@user, @post),
+    <% if can? :destroy, @post || @post.user.id == current_user %>
+      <%= button_to "Delete", user_post_comments_path(@user, @post),
                     method: :delete, class: "btn btn-danger" %>
     <% end %>
   </div>
@@ -32,9 +32,20 @@
     <ul>
       <h5>All the Comments:</h5>
       <br>
-        <% @post.comments.each do |comment| %>
-          <li><%= comment.author.name %>: <%= comment.text %></li>
+      <% @post.comments.each do |comment| %>
+        <li class="comment-container">
+          <div class="comment-content">
+            <%= comment.author.name %>: <%= comment.text %>
+          </div>
+          <% if can? :destroy, comment || comment.author_id == current_user.id %>
+            <div class="delete-button">
+              <%= button_to "Delete", user_post_comment_path(@user, @post, comment),
+                            method: :delete, class: "btn btn-danger btn-delete" %>
+            </div>
+          <% end %>
+        </li>
       <% end %>
+      
     </ul>
   </div>
 </div>
